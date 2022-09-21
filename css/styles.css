@@ -465,8 +465,8 @@ right: -50px;
 }
 
 .modal-dialog {
-    max-width: 60vw;
-    height: 100vh;
+    max-width: 60vw !important;
+    height: 100vh !important;
 }
 
 .modal-content {
