@@ -584,3 +584,254 @@ right: -50px;
     box-shadow: 0 0 0 2px gray;
   }
    */
+
+   /* ----- testimonial -------  */
+
+.testimonial {
+   
+    
+    margin-top: 100px;
+}
+
+.testimonial-title {
+    text-align: center;
+}
+
+.testimonial-title h6 {
+    font-family: "Poiret One",cursive;
+    /* font-weight: 100; */
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+}
+
+.testimonial-title h2 {
+    font-size: 3.8rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #262626;
+}
+
+.testimonial-content {
+    max-width: 1199px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0 100px;
+
+
+  }
+  
+  .testimonial-thumbs .testimonial-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 4px;
+    position: relative;
+    z-index: 101;
+    background-color: #A1C9F1;
+
+    
+  }
+  
+  .testimonial-thumbs {
+    width: 300px;
+    margin: auto;
+    box-sizing: border-box;
+    height: 170px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .testimonial-thumbs::after , .testimonial-thumbs::before {
+    content: "";
+    width: 30px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .testimonial-thumbs::after{
+    background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+    right: 0;
+  }
+
+  .testimonial-thumbs::before{
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    left: 0;
+  }
+
+  .testimonial-comment {
+    min-height: 300px;
+    width: 100%;
+    overflow: hidden;
+    
+
+    position: relative;
+
+  }
+  .testimonial-comment .swiper-wrapper {
+    padding-bottom: 20px;
+    
+    
+  
+}
+
+
+
+
+  .testimonial-thumbs .testimonial-pic {
+    padding: 30px 0 0;
+    transition: all 0.5s;
+
+    position: relative !important;
+
+  }
+
+  .testimonial-thumbs .testimonial-pic::before ,  .testimonial-thumbs .testimonial-pic::after {
+    content: "";
+    background-color: #A1C9F1;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  .testimonial-thumbs .testimonial-pic::after {
+    height: 10px;
+    width: 10px;
+    bottom: 0;
+  }
+
+
+  .testimonial-thumbs .testimonial-pic::before {
+    height: 15px;
+    width: 15px;
+    bottom: 20px;
+  }
+
+
+  .testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic {
+    padding: 0 0 40px;
+  }
+
+  .testimonial-text {
+    padding: 50px 30px;
+    text-align: center;
+    box-shadow: 0 20px 50px 0 rgb(0 0 0 / 10%);
+    margin: 20px 100px;
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+  }
+
+  .testimonial-comment-item {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    
+    color: #A1C9F1;
+
+    font-size: 5rem;
+
+}
+
+  .testimonial-text .testimonial-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    line-height: 26px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  .testimonial-text span  {
+    display: block;
+
+    font-size: 0.9rem;
+    color: #A1C9F1;
+
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .testimonial-text p {
+    font-size: 1.1rem;
+    color: #636363;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+
+  .testimonial-content .testimonial-thumbs .testimonial-pic .shape-bx {
+    position: relative;
+    height: 35px;
+    width: 50px;
+    left: 48%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 100;
+   
+  }
+
+ 
+.testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic .shape-bx {
+    opacity: 1;
+}
+
+.testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic::before ,
+.testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic::after
+ {
+    opacity: 1;
+}
+
+
+  .testimonial-content .testimonial-thumbs .testimonial-pic .shape-bx::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 1s;
+    border-left: 1px solid #A1C9F1;
+    border-right: 1px solid #A1C9F1;
+    
+
+   
+
+    background-image: url(../image/pattern12.png);
+    background-position: bottom;
+    background-size: contain;
+    height: 35px;
+    width: 50px;
+    z-index: 100;
+  }
+
+  .testimonial-content .testimonial-thumbs .testimonial-pic .shape-bx::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 1s;
+    
+
+
+    background-color: #A1C9F1;
+
+    height: 35px;
+    width: 50px;
+    z-index: 100;
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
+
+    bottom: -5px;
+  }
