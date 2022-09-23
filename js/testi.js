@@ -17,7 +17,7 @@ var testimonialThumbs = new Swiper(".testimonial-thumbs", {
       swiper: testimonialThumbs
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: "#swiper-pagination-1",
       clickable: true
     }
   });

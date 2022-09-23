@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
+
 body, html {
     font-family: 'Jost', sans-serif;
     /* background: #F2F4F8 !important; */
+   
 }
 
 header {
@@ -221,6 +223,9 @@ nav {
 }
 
 /* -------- section ---------  */
+section {
+  overflow: hidden;
+}
 /* --- review ---  */
 .review {
     height: 670px;
@@ -352,7 +357,7 @@ nav {
 
 /* ---- product -----  */
 .product {
-
+  
 }
 
 .product-block {
@@ -838,21 +843,28 @@ right: -50px;
   }
 
 
+
   /* ---------- footer ----------  */
   footer {
-    
+    overflow: hidden;
   }
 
   .contact {
+    background: #1E1E1E;
+    color: #fff;
 
   }
 
   .block-contact {
+    padding: 100px 200px !important;
     display: flex;
+    justify-content: space-around;
+
+    
   }
 
   .contact-name {
-
+    width: 30%;
   }
 
   .contact-name img {
@@ -860,5 +872,34 @@ right: -50px;
     height: 150px;
   }
 
+  .block-contact-socical {
+    width: 20%;
+
+  }
+
+  .contact-navigation {
+    width: 20%;
+
+  }
+
+  .navigation-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 20%;
+  }
+
+  .contact-email {
+    width: 20%;
+    
+  }
+
+  .form-row {
+    display: flex !important;
+    flex-direction: column !important;
+ 
+  }
 
 
