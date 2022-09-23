@@ -6,6 +6,7 @@
 
 body, html {
     font-family: 'Jost', sans-serif;
+    /* background: #F2F4F8 !important; */
 }
 
 header {
@@ -448,7 +449,7 @@ right: -50px;
     position: absolute !important;
     bottom: 50% !important;
     left: 50% !important;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
     width: 50px;
     height: 50px;
     font-size: 1.3rem;
@@ -478,7 +479,7 @@ right: -50px;
 
 /* ----- blogs -----  */
 .blogs {
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
 }
 
 .blogs .text-center {
@@ -566,10 +567,10 @@ right: -50px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, calc(-50% + 12px));
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.25s;
-    padding: 0 8px;
+    padding: 8px 12px;
     border-radius: 12px;
     color: white;
     outline: 2px solid transparent;
@@ -588,7 +589,7 @@ right: -50px;
    /* ----- testimonial -------  */
 
 .testimonial {
-    
+ 
     
     margin-top: 100px;
 }
