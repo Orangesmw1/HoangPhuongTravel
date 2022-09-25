@@ -683,7 +683,9 @@ right: -50px;
   
 }
 
-
+.swiper-pagination {
+  opacity: 0 !important;
+}
 
 
   .testimonial-thumbs .testimonial-pic {
@@ -849,10 +851,17 @@ right: -50px;
     overflow: hidden;
   }
 
+  .block-footer {
+    background: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contact {
     background: #1E1E1E;
     color: #fff;
-
+    
   }
 
   .block-contact {
@@ -861,34 +870,71 @@ right: -50px;
     justify-content: space-around;
 
     
+
+    
   }
 
   .contact-name {
     width: 30%;
+    padding-right: 80px;
+  }
+
+  .contact-name p {
+    font-size: 1.2rem;
   }
 
   .contact-name img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
 
   .block-contact-socical {
-    width: 20%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
 
+    
+  }
+
+  .block-contact i {
+    font-size: 1.2rem;
   }
 
   .contact-navigation {
-    width: 20%;
+    width: 11%;
 
   }
 
   .navigation-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+  }
+
+  .navigation-content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+
+  }
+
+  .navigation-content a:hover {
+    color: #5f8dbb;
   }
 
   .contact-info {
     width: 20%;
+  }
+
+  .contact-info ul {
+    list-style: none;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    
   }
 
   .contact-email {
@@ -900,6 +946,65 @@ right: -50px;
     display: flex !important;
     flex-direction: column !important;
  
+  }
+
+  .input-email {
+    width: 250px;
+    padding: 10px;
+    /* border-radius: 5px; */
+    border: none;
+    border-color: none;
+    background-color: #636363;
+  }
+
+  .input-email::placeholder {
+    color: #fff;
+  }
+
+  .email-submit {
+    margin-top: 10px;
+    
+
+  }
+
+  .email-submit button {
+    width: 250px;
+    padding: 10px 0 ;
+    background-color: transparent;
+    border-color: #fff;
+  }
+
+  .copyright {
+    color: #C1C1C1;
+    padding: 30px 0;
+    width: 80%;
+    text-align: center;
+
+    position: relative;
+  }
+
+  .copyright::after {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.274);
+  }
+  
+  .copyright i {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .copyright a {
+    text-decoration: none;
+    color: #fff;
+
+    font-size: 1.1rem;
+
   }
 
 
