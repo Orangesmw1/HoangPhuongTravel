@@ -125,6 +125,14 @@ nav {
     padding: 0 15px;
 }
 
+.socical-nav-clone a {
+  color: #fff;
+}
+
+.socical-nav-clone a:hover {
+  color: #5f8dbb;
+}
+
 .socical-nav-clone i {
     font-size: 1.1rem;
 }
@@ -178,6 +186,8 @@ nav {
     bottom: 80px !important;
 }
 
+
+
 .carousel-caption span {
     /* color: #fff; */
     font-size: 1.2rem;
@@ -221,6 +231,8 @@ nav {
     /* right: -60px !important; */
 
 }
+
+ 
 
 /* -------- section ---------  */
 section {
@@ -320,6 +332,7 @@ section {
     background: none;
     border-radius: 0px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .review-content a:hover {
