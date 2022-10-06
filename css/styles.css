@@ -8,7 +8,72 @@
 body, html {
     font-family: 'Jost', sans-serif;
     /* background: #F2F4F8 !important; */
+    scroll-behavior: smooth !important;
    
+}
+
+#myBtn {
+  background: #0A0A0A;
+    height: 40px;
+    width: 40px;
+    right: 31px;
+    bottom: 18px;
+
+    position: fixed;
+    z-index: 100;
+
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgb(108 98 98 / 20%);
+}
+
+
+#myBtn .block-back-top {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.block-back-top .arrow {
+  padding: 8px;
+    
+    
+  
+    opacity: 0;
+    position: absolute;
+
+}
+
+#myBtn .arrow-up-one {
+  animation: arrow-back-top 3s ease-in-out infinite;
+}
+
+#myBtn .arrow-up-two {
+  animation: arrow-back-top 3s 1s ease-in-out infinite;
+}
+
+@keyframes arrow-back-top {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+
+  70% {
+      opacity: 1;
+  }
+
+  100% {
+      top: -10px;
+      opacity: 0;
+  }
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
 
 header {
@@ -70,8 +135,6 @@ nav {
   
 }
 
-
-
 .navbar-nav .nav-item .nav-link {
     text-decoration: none; 
     color: #fff !important;
@@ -80,6 +143,8 @@ nav {
     position: relative !important;
 
 }
+
+
 
 .dropdown-menu {
     left: 20px;
