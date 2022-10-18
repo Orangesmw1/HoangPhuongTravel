@@ -90,7 +90,7 @@ nav {
 
     height: 90px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.11) !important;
+    background-color: rgba(0, 0, 0, 0.322) !important;
     color: #fff !important;
 
     padding: 0 70px !important;
@@ -211,7 +211,7 @@ nav {
 }
 
 .carousel-indicators {
-    bottom: 5% !important;
+    bottom: 2% !important;
 }
 
 .carousel-inner {
@@ -269,6 +269,17 @@ nav {
     color: #fff;
     line-height: 1.1;
     /* font-family: "Poiret One",cur; */
+}
+
+.carousel-caption .read-content {
+  background-color: #5f8dbb;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+ 
 }
 
 .carousel-control-prev  {
