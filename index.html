@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HoangPhuongTravel</title>
 
+  <link rel="stylesheet icon" href="./image/logoHPT.jpg">
+
   <!-- font gg  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,10 +18,7 @@
   <!-- bootstraps  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    
-    
 
-  
 
   <!-- font items  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -34,6 +33,7 @@
 </head>
 
 <body>
+  <!-- back-to-top  -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">
     <div class="block-back-top">
       <div class="arrow arrow-up-one">
@@ -45,6 +45,8 @@
       </div>
     </div>
   </button>
+
+  <!-- header  -->
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="logo">
@@ -53,48 +55,33 @@
       </div>
 
       <div class="block-nav-content">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home </a>
+              <a class="nav-link" href="#">Trang chủ</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Service
+
+            <li class="nav-item ">
+              <a class="nav-link" href="#">
+                Điểm đến
               </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                About
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="#"  >
+                Khách sạn
               </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Block
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+             
             </li>
             <li class="nav-item ">
-              <a class="nav-link " href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Contact
+              <a class="nav-link" href="#"  >
+                Combo du lịch
+              </a>
+              
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="#contact" >
+                Liên hệ
               </a>
               
             </li>
@@ -104,20 +91,23 @@
 
       <div class="block-nav-socical">
         <div class="socical-nav-clone">
-          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/hoangphuongtravel"><i class="fab fa-facebook-f"></i></a>
         </div>
         <div class="socical-nav-clone">
-          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/hoangphuongtravel_01/"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="socical-nav-clone">
-          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href="https://www.tiktok.com/@hoangphuongtravel1311?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
         </div>
+        
         <div class="socical-nav-clone">
-          <a href=""><i class="fab fa-youtube"></i></a>
+          <a href="https://www.youtube.com/channel/UCTkjVGh8DYFGfgFysbWVrSg"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
     </nav>
 
+
+    <!-- carousel  -->
     <div class="carousel">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -125,55 +115,189 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
+
         <div class="carousel-inner">
+
+          <!-- carousel-1  -->
           <div class="carousel-item active">
             <div class="overlay"></div>
-            <img src="./image/s3.jpg " alt="..." />
+            <img src="./image/dalat-2n1d.jpg " alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <!-- <span>VOCHER</span> -->
-              <h1>PAO'S SAPA LEISURE </h1>
-              <a class="read-content" data-toggle="modal" data-target="#carousel1">CHI TIẾT</a>
+              <h2>2 Ngày 1 Đêm</h2>
+              <h1>Đà Lạt</h1>
+              <a onclick="stopCarousel()" class="read-content" data-toggle="modal" data-target="#carousel1">CHI TIẾT</a>
             </div>
             
-            <!-- carousel1  -->
+            <!-- content carousel1  -->
             <div class="modal fade" id="carousel1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modalsssd title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Đà Lạt - 2N1D</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    ...
+                    <img src="./image/voucher-datlat-2n1d.jpg" class="img-voucher img-voucher-dalat" alt="">
+                    <div class="group-content-carousel">
+                        <h6>Mỗi tháng ở Hà Giang lại mang một vẻ đẹp khác nhau nhưng có lẽ khoảng thời gian cuối năm là mùa đẹp nhất và thích hợp nhất để chọn Hà Giang để đi du lịch.</h6>
+                        <h5><i class="fa fa-dollar-sign"></i> 2.599.000Đ/khách </h5>
+                        <span>-------------------------------</span>
+                        <p>Những điểm check-in với hoa tam giác mạch như:</p>
+                        <ul>
+                          <li>Bản Sủng Là</li>
+                          <li>Lũng Cú</li>
+                          <li>Bản Lô Lô Chải</li>
+                          <li>Phố Cáo</li>
+                          <li>Du ngoạn sông Nho Quế</li>
+                        </ul>
+                        <span><i class="fa fa-hand-point-right"></i> Đừng quên rằng 𝗛𝗼𝗮̀𝗻𝗴 𝗣𝗵𝘂̛𝗼̛𝗻𝗴 𝗧𝗿𝗮𝘃𝗲𝗹 có 𝐭𝐨𝐮𝐫 𝐝𝐮𝐲 𝐧𝐡𝐚̂́𝐭 sẽ đưa bạn tới hết những nơi này, check in hết các điểm nổi tiếng ở mảnh đất Hà Giang xinh đẹp.</span>
+                        
+                        <div class="contact-content-carousel">
+                          <span>-------------------------------</span>
+                          <h4>Hoàng Phương Travel</h4>
+                          <ul>
+                            <li>Địa chỉ: 28a, Lê Trọng Tấn, Hà Đông, Hà Nội</li>
+                            <li>Tel: 0783177388</li>
+                            <li>Hotline/Zalo: 0783177388/0981068865</li>
+                          </ul>
+                        </div>
+                        
+                        
+                    </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" onclick="runCarousel()" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+
+          <!-- carousel-2  -->
           <div class="carousel-item">
             <div class="overlay"></div>
-            <img src="./image/ct2.jpg" alt="..." />
+            <img src="./image/hagiang-3n2d.png" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <span>Action Shot</span>
-              <h1>Electricity</h1>
+              <h2>3 Ngày 2 Đêm</h2>
+              <h1>Hà Giang</h1>
+              <a class="read-content" onclick="stopCarousel()" data-toggle="modal" data-target="#carousel2">CHI TIẾT</a>
             </div>
           </div>
+
+          <!-- content carousel2 -->
+          <div class="modal fade" id="carousel2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Hà Giang - 3N2D</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="./image/HA GIANG - HPT.png" class="img-voucher" alt="">
+                  <div class="group-content-carousel">
+                      <h6>Mỗi tháng ở Hà Giang lại mang một vẻ đẹp khác nhau nhưng có lẽ khoảng thời gian cuối năm là mùa đẹp nhất và thích hợp nhất để chọn Hà Giang để đi du lịch.</h6>
+                      <h5><i class="fa fa-dollar-sign"></i> 2.690.000Đ/khách </h5>
+                      <span>-------------------------------</span>
+                      <p>Những điểm check-in với hoa tam giác mạch như:</p>
+                      <ul>
+                        <li>Bản Sủng Là</li>
+                        <li>Lũng Cú</li>
+                        <li>Bản Lô Lô Chải</li>
+                        <li>Phố Cáo</li>
+                        <li>Du ngoạn sông Nho Quế</li>
+                      </ul>
+                      <span><i class="fa fa-hand-point-right"></i> Đừng quên rằng 𝗛𝗼𝗮̀𝗻𝗴 𝗣𝗵𝘂̛𝗼̛𝗻𝗴 𝗧𝗿𝗮𝘃𝗲𝗹 có 𝐭𝐨𝐮𝐫 𝐝𝐮𝐲 𝐧𝐡𝐚̂́𝐭 sẽ đưa bạn tới hết những nơi này, check in hết các điểm nổi tiếng ở mảnh đất Hà Giang xinh đẹp.</span>
+                      
+                      <div class="contact-content-carousel">
+                        <span>-------------------------------</span>
+                        <h4>Hoàng Phương Travel</h4>
+                        <ul>
+                          <li>Địa chỉ: 28a, Lê Trọng Tấn, Hà Đông, Hà Nội</li>
+                          <li>Tel: 0783177388</li>
+                          <li>Hotline/Zalo: 0783177388/0981068865</li>
+                        </ul>
+                      </div>
+                      
+                      
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" onclick="runCarousel()"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+
+
+          <!-- carousel-3  -->
           <div class="carousel-item">
             <div class="overlay"></div>
-
-            <img src="./image/ct3.jpg" alt="..." />
+            <img src="./image/puluong 2n1d.jpg" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <span>Action Shot</span>
-              <h1>Electricity</h1>
+              <h2>2 Ngày 1 Đêm</h2>
+              <h1>Pu Luông</h1>
+              <a class="read-content" onclick="stopCarousel()" data-toggle="modal" data-target="#carousel3">CHI TIẾT</a>
+            </div>
+          </div>
+          <!-- content carousel3 -->
+          <div class="modal fade" id="carousel3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Pu Luông - 2N1D</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="./image/puluong-voucher.jpg" class="img-voucher" alt="">
+                  <div class="group-content-carousel">
+                      <h6>[COMBO PULUONG] 🔸 [PULUONG RETREAT THANH HOÁ] </h6>
+                      <h5><i class="fa fa-dollar-sign"></i> 1.550.000Đ/khách </h5>
+                      <span>-------------------------------</span>
+                      <p>𝗣𝘂̀ 𝗟𝘂𝗼̂𝗻𝗴 𝗥𝗲𝘁𝗿𝗲𝗮𝘁 𝗧𝗵𝗮𝗻𝗵 𝗛𝗼𝗮́ </p>
+                      <ul>
+                        <li>Xe khứ hồi Hà Nội - Pù Luông Retreat</li>
+                        <li>01 Đêm nghỉ dưỡng tại deluxe </li>
+                        <li>Ăn bữa trưa ngày 1</li>
+                        <li>Bữa sáng buffet</li>
+                        <li>Nước uống chào mừng</li>
+                        <li>Sử dụng 02 bể bơi vô cực nước tràn tầm nhìn toàn cảnh thiên nhiên</li>
+                      </ul>
+                      <span><i class="fa fa-hand-point-right"></i>Áp dụng cho tháng 01/9-15/11/2022 </span>
+                      <br>
+                      <span><i class="fa fa-hand-point-right"></i> Đừng quên rằng 𝗛𝗼𝗮̀𝗻𝗴 𝗣𝗵𝘂̛𝗼̛𝗻𝗴 𝗧𝗿𝗮𝘃𝗲𝗹 có 𝐭𝐨𝐮𝐫 𝐝𝐮𝐲 𝐧𝐡𝐚̂́𝐭 sẽ đưa bạn tới hết những nơi này, check in hết các điểm nổi tiếng ở mảnh đất Hà Giang xinh đẹp.</span>
+                      
+                      <div class="contact-content-carousel">
+                        <span>-------------------------------</span>
+                        <h4>Hoàng Phương Travel</h4>
+                        <ul>
+                          <li>Địa chỉ: 28a, Lê Trọng Tấn, Hà Đông, Hà Nội</li>
+                          <li>Tel: 0783177388</li>
+                          <li>Hotline/Zalo: 0783177388/0981068865</li>
+                        </ul>
+                      </div>
+                      
+                      
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" onclick="stopCarousel()" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        </div>
+
+        <!-- btn-carousel  -->
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -186,14 +310,18 @@
     </div>
   </header>
 
+  <!-- section  -->
   <section>
+    <!-- review   -->
     <div class="block-review">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <!-- group-review-1  -->
+          <div class="carousel-item active group-review-1">
             <div class="review">
               <div class="block-clone-review">
                 <div class="clone-review">
+
                   <div class="review-title">
                     <h2>I Click Moment, that you love</h2>
                     <p>
@@ -215,13 +343,35 @@
                       "A gray cat slinks past a wooden house. There’s has
                       something a little intimidating attempting to describe.
                     </h5>
-                    <a  data-toggle="modal" data-target="#exampleModalCarousel1">My Work</a>
+                    <a  data-toggle="modal" data-target="#exampleModalReview1">My Work</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- content-group-review-1  -->
+          <div class="modal fade" id="exampleModalReview1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- group-review-2  -->
+          <div class="carousel-item group-review-2 ">
             <div class="review">
               <div class="block-clone-review">
                 <div class="clone-review">
@@ -246,13 +396,34 @@
                       "A gray cat slinks past a wooden house. There’s has
                       something a little intimidating attempting to describe.
                     </h5>
-                    <a  data-toggle="modal" data-target="#exampleModalCarousel2">My Work</a>
+                    <a  data-toggle="modal" data-target="#exampleModalReview2">My Work</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- content-group-review-2  -->
+          <div class="modal fade" id="exampleModalReview2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal22 title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- group-review-3  -->
+          <div class="carousel-item group-review-3">
             <div class="review">
               <div class="block-clone-review">
                 <div class="clone-review">
@@ -277,15 +448,15 @@
                       "A gray cat slinks past a wooden house. There’s has
                       something a little intimidating attempting to describe.
                     </h5>
-                    <a  data-toggle="modal" data-target="#exampleModalCarousel3">My Work</a>
+                    <a  data-toggle="modal" data-target="#exampleModalReview3">My Work</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- content-carousel  -->
-          <div class="modal fade" id="exampleModalCarousel1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <!-- content-group-review-3  -->
+          <div class="modal fade" id="exampleModalReview3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -299,53 +470,13 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal fade" id="exampleModalCarousel2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal22 title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal fade" id="exampleModalCarousel3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
         </div>
+
+        <!-- btn next & back  -->
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
           <span class="item-left"><i class="fa fa-chevron-left"></i></span>
           <span class="sr-only">Previous</span>
@@ -357,9 +488,11 @@
       </div>
     </div>
 
+    <!-- product  -->
     <div class="product">
       <div class="product-block">
         <div class="grid-product">
+          <!-- product-1 -->
           <div class="grid-clone">
             <img src="./image/ct1.jpg" alt="" />
             <div class="grid-clone-title">
@@ -369,13 +502,13 @@
             <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
             </div>
-            <!-- Button trigger modal -->
-            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleModal1">
+            <!-- Button content-product-1 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct1">
               <i class="fa fa-plus"></i>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <!-- content-product-1  -->
+            <div class="modal fade" id="exampleProduct1" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -403,6 +536,7 @@
             </div>
           </div>
 
+          <!-- product-2  -->
           <div class="grid-clone">
             <img src="./image/ct2.jpg" alt="" />
             <div class="grid-clone-title">
@@ -412,13 +546,13 @@
             <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
             </div>
-            <!-- Button trigger modal -->
-            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleModal2">
+            <!-- Button product-2 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct2">
               <i class="fa fa-plus"></i>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <!-- Content product-2-->
+            <div class="modal fade" id="exampleProduct2" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -445,6 +579,8 @@
               </div>
             </div>
           </div>
+
+          <!-- product-3  -->
           <div class="grid-clone">
             <img src="./image/ct3.jpg" alt="" />
             <div class="grid-clone-title">
@@ -454,13 +590,13 @@
             <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
             </div>
-            <!-- Button trigger modal -->
-            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleModal3">
+            <!-- Button product-3 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct3">
               <i class="fa fa-plus"></i>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <!-- Content product-3-->
+            <div class="modal fade" id="exampleProduct3" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -487,6 +623,8 @@
               </div>
             </div>
           </div>
+
+          <!-- product-4 -->
           <div class="grid-clone">
             <img src="./image/ct2.jpg" alt="" />
             <div class="grid-clone-title">
@@ -496,13 +634,13 @@
             <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
             </div>
-            <!-- Button trigger modal -->
-            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleModal4">
+
+            <!-- Button product-4 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct4">
               <i class="fa fa-plus"></i>
             </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <!-- Content product-4 -->
+            <div class="modal fade" id="exampleProduct4" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -529,6 +667,8 @@
               </div>
             </div>
           </div>
+
+          <!-- product-5  -->
           <div class="grid-clone">
             <img src="./image/ct3.jpg" alt="" />
             <div class="grid-clone-title">
@@ -538,13 +678,13 @@
             <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
             </div>
-            <!-- Button trigger modal -->
-            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleModal5">
+            <!-- Button product-5 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct5">
               <i class="fa fa-plus"></i>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <!-- Content product-5 -->
+            <div class="modal fade" id="exampleProduct5" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -571,6 +711,8 @@
               </div>
             </div>
           </div>
+
+          <!-- product-6  -->
           <div class="grid-clone">
             <img src="./image/ct1.jpg" alt="" />
             <div class="grid-clone-title">
@@ -580,13 +722,13 @@
             <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
             </div>
-            <!-- Button trigger modal -->
-            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleModal6">
+            <!-- Button product-6 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct6">
               <i class="fa fa-plus"></i>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <!-- Content product-6 -->
+            <div class="modal fade" id="exampleProduct6" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -612,25 +754,28 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
 
+    <!-- blogs  -->
     <div class="blogs">
-      
       <div class="block-blogs">
         <h2 class="text-center">Travel Tips</h2>
         <div class="container-e">
           <div class="slid-er">
             <div class="slides" id="slides">
+
+              <!-- blog-1 -->
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
                     <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleModal7">
+                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog1">
                         <i class="fa fa-plus"></i>
                       </div>
                     </div>
@@ -640,13 +785,14 @@
                 
               </div>
 
+              <!-- blog-2 -->
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
                     <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleModal8">
+                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog2">
                         <i class="fa fa-plus"></i>
                       </div>
                     </div>
@@ -656,13 +802,14 @@
                 
               </div>
 
+              <!-- blog-3 -->
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
                     <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleModal9">
+                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog3">
                         <i class="fa fa-plus"></i>
                       </div>
                     </div>
@@ -672,13 +819,14 @@
                 
               </div>
 
+              <!-- blog-4 -->
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
                     <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleModal10">
+                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog4">
                         <i class="fa fa-plus"></i>
                       </div>
                     </div>
@@ -686,77 +834,83 @@
                   </div>
                 </div>
               </div>
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleModal11">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleModal12">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleModal13">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleModal14">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              
 
-              
+              <!-- blog-5 -->
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="block-content-blogs" target="_blank">
+                    <h2>3 day in Ha Noi</h2>
+                    <img src="./image/ct1.jpg" loading="lazy" />
+                    <div class="button-container">
+                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog5">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
 
-              
+              <!-- blog-6 -->
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="block-content-blogs" target="_blank">
+                    <h2>3 day in Ha Noi</h2>
+                    <img src="./image/ct1.jpg" loading="lazy" />
+                    <div class="button-container">
+                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog6">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
 
+              <!-- blog-7 -->
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="block-content-blogs" target="_blank">
+                    <h2>3 day in Ha Noi</h2>
+                    <img src="./image/ct1.jpg" loading="lazy" />
+                    <div class="button-container">
+                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog7">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <!-- blog-8 -->
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="block-content-blogs" target="_blank">
+                    <h2>3 day in Ha Noi</h2>
+                    <img src="./image/ct1.jpg" loading="lazy" />
+                    <div class="button-container">
+                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog8">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- content blogs  -->
-      <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+      <!-- Group-content-blogs  -->
+
+      <!-- content blogs-1 -->
+      <div class="modal fade" id="exampleBlog1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-                        <div class="modal-content">
+          <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">
                               HELLO CÔ GỚI :)))
@@ -776,138 +930,14 @@
                               Ô SỜ KÊ
                             </button>
                           </div>
-                        </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-                        </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-                        </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-                        </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-                        </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-                        </div>
+          </div>
         </div>
       </div>
 
-      <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- content-blog-2  -->
+      <div class="modal fade" id="exampleBlog2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-                        <div class="modal-content">
+          <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">
                               HELLO CÔ GỚI :)))
@@ -927,38 +957,176 @@
                               Ô SỜ KÊ
                             </button>
                           </div>
-                        </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-                        </div>
+          </div>
         </div>
       </div>
 
-      
+      <!-- content-blog-3  -->
+      <div class="modal fade" id="exampleBlog3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-4  -->
+      <div class="modal fade" id="exampleBlog4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-5  -->
+      <div class="modal fade" id="exampleBlog5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-6 -->
+      <div class="modal fade" id="exampleBlog6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-7  -->
+      <div class="modal fade" id="exampleBlog7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-8  -->
+      <div class="modal fade" id="exampleBlog8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+
+
+    <!-- testimonial -->
     <div class="testimonial">
       <div class="testimonial-title">
         <h6>Testimonial</h6>
@@ -969,18 +1137,23 @@
         <!-- Swiper -->
         <div class="swiper-container testimonial-thumbs">
           <div class="swiper-wrapper">
+            <!-- testimonial-1  -->
             <div class="swiper-slide">
               <div class="testimonial-pic">
                 <img src="./image/samar24.jpg" alt="" />
                 <div class="shape-bx"></div>
               </div>
             </div>
+
+            <!-- testimonial-2  -->
             <div class="swiper-slide">
               <div class="testimonial-pic">
                 <img src="image/samar25.jpg" alt="" />
                 <div class="shape-bx"></div>
               </div>
             </div>
+
+            <!-- testimonial-3  -->
             <div class="swiper-slide">
               <div class="testimonial-pic">
                 <img src="image/samar26.jpg" alt="" />
@@ -990,8 +1163,10 @@
           </div>
         </div>
 
+        <!-- content-testimonial  -->
         <div class="swiper-container testimonial-comment">
           <div class="swiper-wrapper">
+            <!-- content testimonial-1  -->
             <div class="swiper-slide">
               <div class="testimonial-text">
                 <strong class="testimonial-name">Cak Dikin </strong>
@@ -1008,6 +1183,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- content testimonial-2  -->
             <div class="swiper-slide">
               <div class="testimonial-text">
                 <strong class="testimonial-name">Cak Dikin </strong>
@@ -1024,6 +1201,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- content testimonial-3  -->
             <div class="swiper-slide">
               <div class="testimonial-text">
                 <strong class="testimonial-name">Cak Dikin </strong>
@@ -1041,17 +1220,20 @@
               </div>
             </div>
           </div>
+
           <div  class="swiper-pagination"></div>
         </div>
       </div>
     </div>
-
   </section>
 
+  <!-- footer  -->
   <footer>
     <div class="block-footer">
-      <div class="contact">
+      <!-- contact  -->
+      <div class="contact" id="contact">
         <div class="block-contact ">
+          <!-- contact-name  -->
           <div class="contact-name">
             <img src="./image/z3717658380106_02b864d4cb210c7112e402a14815c8ff_clipdrop-background-removal.png" alt="" />
             <p>
@@ -1065,6 +1247,8 @@
               <i class="fab fa-youtube"></i>
             </div>
           </div>
+
+          <!-- contact-navigation  -->
           <div class="contact-navigation">
             <div class="navigation-title">
               <h4>Navigation</h4>
@@ -1078,6 +1262,7 @@
             </div>
           </div>
 
+          <!-- contact-info  -->
           <div class="contact-info">
             <h4>Contact</h4>
             <ul>
@@ -1087,6 +1272,7 @@
             </ul>
           </div>
 
+          <!-- contact-email  -->
           <div class="contact-email">
             <form>
               <div class="form-row align-items-start">
@@ -1106,6 +1292,7 @@
         </div>
       </div>
 
+      <!-- copyright  -->
       <div class="copyright">
         <p>Copyright © 2022 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <a href="">Hoang Phuong Travel</a> </p>
         
@@ -1113,15 +1300,13 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+  <!-- js  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/blogs.js"></script>
   <script src="./js/testi.js"></script>
-
   <script src="./js/back-to-top.js"></script>
-  <!-- <script src="./js/combo.js"></script> -->
-
-
+  <script src="./js/carousel-stop.js"></script>
 
   <!-- bootstraps  -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

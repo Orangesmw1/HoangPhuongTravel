@@ -9,6 +9,7 @@ body, html {
     font-family: 'Jost', sans-serif;
     /* background: #F2F4F8 !important; */
     scroll-behavior: smooth !important;
+  font-family: "Poiret One",cur;
    
 }
 
@@ -88,9 +89,9 @@ nav {
     justify-content: space-between !important;
     align-items: center !important;
 
-    height: 90px;
+    height: 70px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.322) !important;
+    background-color: rgba(0, 0, 0, 0.499) !important;
     color: #fff !important;
 
     padding: 0 70px !important;
@@ -108,24 +109,41 @@ nav {
 
 
 .logo {
+  width: 20%;
+  height: 100%;
 
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-brand {
-    width: 85px;
+   
+    width: 70px;
     height: 100%;
+  margin: 0 !important;
+  padding: 0;
 }
 
 .block-nav-content {
     height: 100%;
+    width: 60%;
     
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+#navbarNav {
+  width: 100%;
+
 }
 
 .navbar-nav {
     height: 100%;
+    width: 100%;
 
+    display: flex;
+    justify-content: center;
 }
 
 .nav-item {
@@ -141,28 +159,10 @@ nav {
     font-size: 1.1rem !important;
 
     position: relative !important;
+    font-size: 1.1rem;
+
 
 }
-
-
-
-.dropdown-menu {
-    left: 20px;
-    top: 115% ;
-
-    background-color: #00000082 !important;
-}
-
-.dropdown-menu .dropdown-item {
-    color: #fff !important;
-
-}
-
-.dropdown-menu .dropdown-item:hover {
-    background-color: #A1C9F1;
-}
-
-
 
 .navbar-nav .nav-item .nav-link::before {
     position: absolute !important;
@@ -184,6 +184,9 @@ nav {
 
 .block-nav-socical {
     display: flex;
+    justify-content: center;
+    width: 20%;
+
 }
 
 .socical-nav-clone {
@@ -192,6 +195,8 @@ nav {
 
 .socical-nav-clone a {
   color: #fff;
+  font-size: 1.1rem;
+
 }
 
 .socical-nav-clone a:hover {
@@ -235,7 +240,7 @@ nav {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.171) !important;
+    background-color: rgba(0, 0, 0, 0.31) !important;
 
     
 }
@@ -261,14 +266,19 @@ nav {
     margin-bottom: 10px;
 }
 
+.carousel-caption h2 {
+  font-family: "Poiret One",cur;
+
+}
+
 .carousel-caption h1 {
-    text-transform: uppercase;
-    font-size: 5.5rem;
-    font-weight: 200;
+    /* text-transform: uppercase; */
+    font-size: 5rem;
+    font-weight: 400;
     margin-bottom: 50px;
     color: #fff;
     line-height: 1.1;
-    /* font-family: "Poiret One",cur; */
+    font-family: "Poiret One",cur;
 }
 
 .carousel-caption .read-content {
@@ -279,6 +289,8 @@ nav {
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
+  font-family: "Poiret One",cur;
+
  
 }
 
@@ -306,6 +318,62 @@ nav {
 
     /* right: -60px !important; */
 
+}
+
+.carousel .modal-title{
+  font-weight: bold;
+}
+
+.carousel .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: auto;
+}
+
+.carousel .modal-body img {
+  object-fit: cover;
+  width: 400px;
+  
+}
+
+.carousel .modal-body .img-voucher-dalat {
+  width: 250px !important;
+}
+
+.carousel .modal-body .group-content-carousel {
+  width: 80%;
+}
+
+.group-content-carousel h6 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.group-content-carousel h5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(225, 61, 61);
+}
+
+.group-content-carousel p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.group-content-carousel ul {
+  padding-left: 20px;
+}
+
+.contact-content-carousel {
+  margin-top: 20px;
+}
+
+.contact-content-carousel h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
  
@@ -564,7 +632,7 @@ right: -50px;
 
 .modal-dialog {
     max-width: 60vw !important;
-    height: 100vh !important;
+    height: 85vh !important;
 }
 
 .modal-content {
