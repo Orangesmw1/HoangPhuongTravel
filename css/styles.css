@@ -77,12 +77,15 @@ body, html {
   background-color: #555;
 }
 
+/* ----------- header ---------  */
 header {
     position: relative;
 
     height: 100vh;
     overflow: hidden;
 }
+
+/* navbar  */
 
 nav {
     display: flex;
@@ -102,11 +105,8 @@ nav {
     top: 0;
     left: 0;
     z-index: 100;
-
     
 }
-
-
 
 .logo {
   width: 20%;
@@ -376,6 +376,196 @@ nav {
   font-weight: bold;
 }
 
+/* For tablet header */
+@media (min-width: 491px) and (max-width: 740px) {
+  @keyframes arrow-back-top {
+    0% {
+      top: 7px;
+      opacity: 0;
+    }
+  
+    70% {
+        opacity: 1;
+    }
+  
+    100% {
+
+        top: -12px;
+        opacity: 0;
+    }
+  }
+
+    /* nav tablet */
+    nav {
+      height: 65px;
+
+    }
+
+    .block-nav-content {
+      display: none;
+    }
+
+    /* carousel tablet  */
+    .carousel-indicators {
+      display: none;
+    }
+    
+    .carousel-caption h2 {
+      font-size: 1.2rem;
+    }
+
+    .carousel-caption h1 {
+      font-size: 3.5rem;
+    }
+
+    .carousel-caption .read-content {
+      padding: 7px 10px;
+      font-size: 1rem;
+    }
+    
+    .carousel-control-prev {
+      left: 0 !important;
+    }
+
+    .carousel-control-next {
+      right: 0 !important;
+    }
+
+    .carousel .modal-dialog {
+      max-width: 90vw !important ;
+    }
+
+    .carousel .modal-body img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .carousel .modal-body .group-content-carousel {
+      width: 90%;
+    }
+}
+
+/* for mobile header  */
+
+@media (max-width: 490px) {
+  #myBtn {
+    width: 30px;
+    height: 30px;
+  }
+
+  @keyframes arrow-back-top {
+    0% {
+      left: -5px;
+      top: 7px;
+      opacity: 0;
+    }
+  
+    70% {
+        opacity: 1;
+    }
+  
+    100% {
+      left: -5px;
+
+        top: -12px;
+        opacity: 0;
+    }
+  }
+  
+  /* nav tablet */
+   nav {
+    height: 65px;
+    padding: 0 10px !important;
+
+    justify-content: space-between;
+  }
+
+  .logo {
+    /* width: 30%; */
+  }
+
+  .block-nav-content {
+    display: none;
+  }
+
+  .block-nav-socical {
+    width: 70%;
+
+    justify-content: right;
+  }
+
+  /* carousel tablet  */
+  .carousel-indicators {
+    display: none;
+  }
+  
+  .carousel-caption h2 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption .read-content {
+    padding: 7px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .carousel-control-prev {
+    left: 0 !important;
+  }
+
+  .carousel-control-next {
+    right: 0 !important;
+  }
+
+  .carousel .modal-dialog {
+    max-width: 90vw !important ;
+
+    /* margin: 0 !important; */
+
+    margin-left: 25px !important;
+    
+  }
+
+  .carousel .modal-body img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .carousel .modal-body .group-content-carousel {
+    width: 90%;
+  }
+
+  .carousel .modal-title {
+    font-size: 1rem;
+  }
+
+  .group-content-carousel h6 {
+    font-size: 1rem;
+  }
+
+  .group-content-carousel h5 {
+    font-size: 0.9rem;
+  }
+
+  .group-content-carousel p {
+    font-size: 0.9rem;
+  }
+
+  .group-content-carousel ul {
+    font-size: 0.9rem;
+  }
+
+  .group-content-carousel span {
+    font-size: 0.9rem
+  };
+
+  .contact-content-carousel h4 {
+    font-size: 1rem;
+  }
+}
  
 
 /* -------- section ---------  */
