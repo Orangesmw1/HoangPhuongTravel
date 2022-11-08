@@ -595,8 +595,17 @@ section {
     align-items: center;
 }
 
+.group-title_img {
+  width: 70%;
+  height: 100%;
+  display: flex ;
+  justify-content: space-around;
+}
+
+
+
 .review-title {
-    width: 30%;
+    width: 40%;
 
 }
 
@@ -622,7 +631,7 @@ section {
 
 .review-img {
     overflow: hidden;
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 
