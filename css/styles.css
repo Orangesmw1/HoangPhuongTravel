@@ -94,7 +94,7 @@ nav {
 
     height: 70px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.499) !important;
+    background-color: rgba(0, 0, 0, 0.424) !important;
     color: #fff !important;
 
     padding: 0 70px !important;
@@ -208,6 +208,9 @@ nav {
 }
 
 /* ----- carousel --------  */
+.block-stop-carousel {
+  display: block;
+}
 
 .carousel {
     height: 100%;
@@ -233,6 +236,13 @@ nav {
     transition: all linear ;
 }
 
+.group-carousel {
+  width: 100%;
+  height: 100% !important;
+  transition: all linear ;
+
+}
+
 .carousel-item .overlay {
     position: absolute;
     top: 0;
@@ -240,7 +250,7 @@ nav {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.31) !important;
+    background-color: rgba(0, 0, 0, 0.144) !important;
 
     
 }
