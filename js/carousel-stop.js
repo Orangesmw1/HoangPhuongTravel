@@ -5,20 +5,19 @@ var carouselItem3 = document.querySelector("#carousel-item-3");
 
 function stopCarousel() {
     
-        if(carouselItem1.className == "carousel-item active") {
+    if(carouselItem1.className == "carousel-item active") {
             carouselItem1.classList.remove("active");
             carouselItem1.classList.add("block-stop-carousel");
 
-        } else if(carouselItem2.className == "carousel-item active") {
+    } else if(carouselItem2.className == "carousel-item active") {
             carouselItem2.classList.remove("active");
             carouselItem2.classList.add("block-stop-carousel");
 
-        } else {
+    } else {
             carouselItem3.classList.remove("active");
             carouselItem3.classList.add("block-stop-carousel");
-        }   
+    }   
 }
-
 
 function runCarousel() {
     if(carouselItem1.className == "carousel-item block-stop-carousel") {
@@ -31,6 +30,5 @@ function runCarousel() {
     } else {
         carouselItem3.classList.add("active");
         carouselItem3.classList.remove("block-stop-carousel");
-
     }   
 }

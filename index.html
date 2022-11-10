@@ -47,7 +47,8 @@
   </button>
 
   <!-- header  -->
-  <header>
+  <header id="myHeader">
+    <!-- nav  -->
     <nav class="navbar navbar-expand-lg">
       <div class="logo">
         <img class="navbar-brand"
@@ -62,19 +63,19 @@
             </li>
 
             <li class="nav-item ">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#mySection">
                 Điểm đến
               </a>
             </li>
             
             <li class="nav-item ">
-              <a class="nav-link" href="#"  >
+              <a class="nav-link" href="#product"  >
                 Khách sạn
               </a>
              
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#"  >
+              <a class="nav-link" href="#comboDulich"  >
                 Combo du lịch
               </a>
               
@@ -106,7 +107,6 @@
       </div>
     </nav>
 
-
     <!-- carousel  -->
     <div class="carousel">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -127,6 +127,7 @@
                 <h2>3 Ngày 2 Đêm</h2>
                 <h1>Đà Lạt</h1>
                 <a onclick="stopCarousel()" class="read-content" data-toggle="modal" data-target="#carousel1">CHI TIẾT</a>
+                <span class="down-scroll"><a href="#mySection"><i class="fa fa-angle-double-down"></i></a> </span>
               </div>
               
               <!-- content carousel1  -->
@@ -191,54 +192,57 @@
               <h2>3 Ngày 2 Đêm</h2>
               <h1>Hà Giang</h1>
               <a class="read-content" onclick="stopCarousel()" data-toggle="modal" data-target="#carousel2">CHI TIẾT</a>
+              <span class="down-scroll"><a href="#mySection"><i class="fa fa-angle-double-down"></i></a> </span>
             </div>
-          </div>
-
-          <!-- content carousel2 -->
-          <div class="modal fade" id="carousel2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Hà Giang - 3N2D</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <img src="./image/HA GIANG - HPT.png" class="img-voucher" alt="">
-                  <div class="group-content-carousel">
-                      <h6>Mỗi tháng ở Hà Giang lại mang một vẻ đẹp khác nhau nhưng có lẽ khoảng thời gian cuối năm là mùa đẹp nhất và thích hợp nhất để chọn Hà Giang để đi du lịch.</h6>
-                      <h5><i class="fa fa-dollar-sign"></i> 2.690.000Đ/khách </h5>
-                      <span>-------------------------------</span>
-                      <p>Những điểm check-in với hoa tam giác mạch như:</p>
-                      <ul>
-                        <li>Bản Sủng Là</li>
-                        <li>Lũng Cú</li>
-                        <li>Bản Lô Lô Chải</li>
-                        <li>Phố Cáo</li>
-                        <li>Du ngoạn sông Nho Quế</li>
-                      </ul>
-                      <span><i class="fa fa-hand-point-right"></i> Đừng quên rằng <b>Hoàng Phương Travel</b> có <b>tour duy nhất</b>sẽ đưa bạn tới hết những nơi này, check in hết các điểm nổi tiếng ở mảnh đất Hà Giang xinh đẹp.</span>
-                      
-                      <div class="contact-content-carousel">
-                        <span>-------------------------------</span>
-                        <h4>Hoàng Phương Travel</h4>
-                        <ul>
-                          <li>Địa chỉ: 28a, Lê Trọng Tấn, Hà Đông, Hà Nội</li>
-                          <li>Tel: 0783177388</li>
-                          <li>Hotline/Zalo: 0783177388/0981068865</li>
-                        </ul>
-                      </div>
-                      
-                      
+            <!-- content carousel2 -->
+            <div class="modal fade" id="carousel2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hà Giang - 3N2D</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" onclick="runCarousel()"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <div class="modal-body">
+                    <img src="./image/HA GIANG - HPT.png" class="img-voucher" alt="">
+                    <div class="group-content-carousel">
+                        <h6>Mỗi tháng ở Hà Giang lại mang một vẻ đẹp khác nhau nhưng có lẽ khoảng thời gian cuối năm là mùa đẹp nhất và thích hợp nhất để chọn Hà Giang để đi du lịch.</h6>
+                        <h5><i class="fa fa-dollar-sign"></i> 2.690.000Đ/khách </h5>
+                        <span>-------------------------------</span>
+                        <p>Những điểm check-in với hoa tam giác mạch như:</p>
+                        <ul>
+                          <li>Bản Sủng Là</li>
+                          <li>Lũng Cú</li>
+                          <li>Bản Lô Lô Chải</li>
+                          <li>Phố Cáo</li>
+                          <li>Du ngoạn sông Nho Quế</li>
+                        </ul>
+                        <span><i class="fa fa-hand-point-right"></i> Đừng quên rằng <b>Hoàng Phương Travel</b> có <b>tour duy nhất</b>sẽ đưa bạn tới hết những nơi này, check in hết các điểm nổi tiếng ở mảnh đất Hà Giang xinh đẹp.</span>
+                        
+                        <div class="contact-content-carousel">
+                          <span>-------------------------------</span>
+                          <h4>Hoàng Phương Travel</h4>
+                          <ul>
+                            <li>Địa chỉ: 28a, Lê Trọng Tấn, Hà Đông, Hà Nội</li>
+                            <li>Tel: 0783177388</li>
+                            <li>Hotline/Zalo: 0783177388/0981068865</li>
+                          </ul>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" onclick="runCarousel()"  class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
+
+          
        
           <!-- carousel-3  -->
           <div class="carousel-item " id="carousel-item-3">
@@ -248,59 +252,64 @@
               <h2>2 Ngày 1 Đêm</h2>
               <h1>Pu Luông</h1>
               <a class="read-content" onclick="stopCarousel()" data-toggle="modal" data-target="#carousel3">CHI TIẾT</a>
+              <span class="down-scroll"><a href="#mySection"><i class="fa fa-angle-double-down"></i></a> </span>
+
+              
             </div>
-          </div>
-          <!-- content carousel3 -->
-          <div class="modal fade" id="carousel3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Pu Luông - 2N1D</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <img src="./image/puluong-voucher.jpg" class="img-voucher" alt="">
-                  <div class="group-content-carousel">
-                      <h6>[COMBO PULUONG] 🔸 [PULUONG RETREAT THANH HOÁ] </h6>
-                      <h5><i class="fa fa-dollar-sign"></i> 1.550.000Đ/khách </h5>
-                      <span>-------------------------------</span>
-                      <p><b>Pù Luông Retreat Thanh Hóa</b></p>
-                      <ul>
-                        <li>Xe khứ hồi Hà Nội - Pù Luông Retreat</li>
-                        <li>01 Đêm nghỉ dưỡng tại deluxe </li>
-                        <li>Ăn bữa trưa ngày 1</li>
-                        <li>Bữa sáng buffet</li>
-                        <li>Nước uống chào mừng</li>
-                        <li>Sử dụng 02 bể bơi vô cực nước tràn tầm nhìn toàn cảnh thiên nhiên</li>
-                      </ul>
-                      <span><i class="fa fa-hand-point-right"></i>Áp dụng cho tháng 01/9-15/11/2022 </span>
-                      <br>
-                      <span><i class="fa fa-hand-point-right"></i> Đừng quên rằng <b>Hoàng Phương Travel</b> có <b>tour duy nhất</b>sẽ đưa bạn tới hết những nơi này, check in hết các điểm nổi tiếng ở mảnh đất Hà Giang xinh đẹp.</span>
-                      
-                      <div class="contact-content-carousel">
-                        <span>-------------------------------</span>
-                        <h4>Hoàng Phương Travel</h4>
-                        <ul>
-                          <li>Địa chỉ: 28a, Lê Trọng Tấn, Hà Đông, Hà Nội</li>
-                          <li>Tel: 0783177388</li>
-                          <li>Hotline/Zalo: 0783177388/0981068865</li>
-                        </ul>
-                      </div>
-                      
-                      
+
+            <!-- content carousel3 -->
+            <div class="modal fade" id="carousel3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pu Luông - 2N1D</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" onclick="runCarousel()" data-dismiss="modal">Đóng</button>
+                  <div class="modal-body">
+                    <img src="./image/puluong-voucher.jpg" class="img-voucher" alt="">
+                    <div class="group-content-carousel">
+                        <h6>[COMBO PULUONG] 🔸 [PULUONG RETREAT THANH HOÁ] </h6>
+                        <h5><i class="fa fa-dollar-sign"></i> 1.550.000Đ/khách </h5>
+                        <span>-------------------------------</span>
+                        <p><b>Pù Luông Retreat Thanh Hóa</b></p>
+                        <ul>
+                          <li>Xe khứ hồi Hà Nội - Pù Luông Retreat</li>
+                          <li>01 Đêm nghỉ dưỡng tại deluxe </li>
+                          <li>Ăn bữa trưa ngày 1</li>
+                          <li>Bữa sáng buffet</li>
+                          <li>Nước uống chào mừng</li>
+                          <li>Sử dụng 02 bể bơi vô cực nước tràn tầm nhìn toàn cảnh thiên nhiên</li>
+                        </ul>
+                        <span><i class="fa fa-hand-point-right"></i>Áp dụng cho tháng 01/9-15/11/2022 </span>
+                        <br>
+                        <span><i class="fa fa-hand-point-right"></i> Đừng quên rằng <b>Hoàng Phương Travel</b> có <b>tour duy nhất</b>sẽ đưa bạn tới hết những nơi này, check in hết các điểm nổi tiếng ở mảnh đất Hà Giang xinh đẹp.</span>
+                        
+                        <div class="contact-content-carousel">
+                          <span>-------------------------------</span>
+                          <h4>Hoàng Phương Travel</h4>
+                          <ul>
+                            <li>Địa chỉ: 28a, Lê Trọng Tấn, Hà Đông, Hà Nội</li>
+                            <li>Tel: 0783177388</li>
+                            <li>Hotline/Zalo: 0783177388/0981068865</li>
+                          </ul>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="runCarousel()" data-dismiss="modal">Đóng</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
 
-        </div>
+        
 
         <!-- btn-carousel  -->
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
@@ -316,13 +325,13 @@
   </header>
 
   <!-- section  -->
-  <section>
+  <section id="mySection">
     <!-- review   -->
     <div class="block-review">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <!-- group-review-1  -->
-          <div class="carousel-item active group-review-1">
+          <div class="carousel-item active" id="group-review-1">
             <div class="review">
               <div class="block-clone-review">
                 <div class="clone-review">
@@ -349,7 +358,7 @@
                       750.000 Đ/Khách
                     </h5>
                     <span><i class="fa fa-hand-point-down"></i> </span>
-                    <a  data-toggle="modal" data-target="#exampleModalReview1">CHI TIẾT</a>
+                    <a  data-toggle="modal" onclick="stopReview()"  data-target="#exampleModalReview1">CHI TIẾT</a>
                   </div>
                 </div>
               </div>
@@ -369,7 +378,7 @@
                   ...
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" onclick="runReview()"  class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -377,7 +386,7 @@
 
 
           <!-- group-review-2  -->
-          <div class="carousel-item group-review-2 ">
+          <div class="carousel-item  " id="group-review-2">
             <div class="review">
               <div class="block-clone-review">
                 <div class="clone-review">
@@ -405,7 +414,7 @@
                       950.000 Đ/Khách
                     </h5>
                     <span><i class="fa fa-hand-point-down"></i> </span>
-                    <a  data-toggle="modal" data-target="#exampleModalReview2">CHI TIẾT</a>
+                    <a  data-toggle="modal" onclick="stopReview()" data-target="#exampleModalReview2">CHI TIẾT</a>
                   </div>
                 </div>
               </div>
@@ -425,14 +434,14 @@
                   ...
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" onclick="runReview()" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- group-review-3  -->
-          <div class="carousel-item group-review-3">
+          <div class="carousel-item " id="group-review-3">
             <div class="review">
               <div class="block-clone-review">
                 <div class="clone-review">
@@ -460,7 +469,7 @@
                       1.650.000 Đ/Đêm 
                     </h5>
                     <span><i class="fa fa-hand-point-down"></i> </span>
-                    <a  data-toggle="modal" data-target="#exampleModalReview3">CHI TIẾT</a>
+                    <a  data-toggle="modal" onclick="stopReview()" data-target="#exampleModalReview3">CHI TIẾT</a>
                   </div>
                 </div>
               </div>
@@ -481,7 +490,7 @@
                   ...
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" onclick="runReview()" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -500,20 +509,21 @@
       </div>
     </div>
 
-    <!-- product  -->
-    <div class="product">
+    <!--group product 1 -->
+    <div class="product" id="product">
       <div class="product-block">
         <div class="grid-product">
           <!-- product-1 -->
           <div class="grid-clone">
-            <img src="./image/ct1.jpg" alt="" />
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/Hotel-Colline-Da-Lat-HPT.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>DANANG</h2>
-              <h6>Lorem ipsum dolor sit.</h6>
+              <h2>Hotel Colline</h2>
+              <h6>Khách sạn Đà Lạt</h6>
             </div>
-            <div class="grid-clone-item">
+            <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
-            </div>
+            </div> -->
             <!-- Button content-product-1 -->
             <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct1">
               <i class="fa fa-plus"></i>
@@ -550,14 +560,15 @@
 
           <!-- product-2  -->
           <div class="grid-clone">
-            <img src="./image/ct2.jpg" alt="" />
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/Junglelodgepuluong-overview-hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>DANANG</h2>
-              <h6>Lorem ipsum dolor sit.</h6>
+              <h2>Pù Luông Jungle Lodge</h2>
+              <h6>Khách sạn Thanh Hóa</h6>
             </div>
-            <div class="grid-clone-item">
+            <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
-            </div>
+            </div> -->
             <!-- Button product-2 -->
             <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct2">
               <i class="fa fa-plus"></i>
@@ -594,14 +605,15 @@
 
           <!-- product-3  -->
           <div class="grid-clone">
-            <img src="./image/ct3.jpg" alt="" />
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/ville de mont mountain resort - hpt.png" alt="" />
             <div class="grid-clone-title">
-              <h2>DANANG</h2>
-              <h6>Lorem ipsum dolor sit.</h6>
+              <h2>Ville De Mont Mountain </h2>
+              <h6>Resort Sapa</h6>
             </div>
-            <div class="grid-clone-item">
+            <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
-            </div>
+            </div>   -->
             <!-- Button product-3 -->
             <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct3">
               <i class="fa fa-plus"></i>
@@ -638,14 +650,15 @@
 
           <!-- product-4 -->
           <div class="grid-clone">
-            <img src="./image/ct2.jpg" alt="" />
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/my gallery boutique hotel - hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>DANANG</h2>
-              <h6>Lorem ipsum dolor sit.</h6>
+              <h2>My Gallery Boutique</h2>
+              <h6>Hotel & Spa Sapa</h6>
             </div>
-            <div class="grid-clone-item">
+            <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
-            </div>
+            </div> -->
 
             <!-- Button product-4 -->
             <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct4">
@@ -682,14 +695,16 @@
 
           <!-- product-5  -->
           <div class="grid-clone">
-            <img src="./image/ct3.jpg" alt="" />
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/esort chapa ecolodge -hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>DANANG</h2>
-              <h6>Lorem ipsum dolor sit.</h6>
+              <h2>Chapa Ecolodge</h2>
+              <h6>Resort Sapa</h6>
             </div>
-            <div class="grid-clone-item">
+            <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
-            </div>
+            </div> -->
+
             <!-- Button product-5 -->
             <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct5">
               <i class="fa fa-plus"></i>
@@ -726,14 +741,16 @@
 
           <!-- product-6  -->
           <div class="grid-clone">
-            <img src="./image/ct1.jpg" alt="" />
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/dallat wonder -hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>DANANG</h2>
-              <h6>Lorem ipsum dolor sit.</h6>
+              <h2>Dalat Wonder</h2>
+              <h6>Resort Đà Lạt</h6>
             </div>
-            <div class="grid-clone-item">
+            <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
-            </div>
+            </div> --> 
+
             <!-- Button product-6 -->
             <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct6">
               <i class="fa fa-plus"></i>
@@ -773,9 +790,9 @@
     </div>
 
     <!-- blogs  -->
-    <div class="blogs">
+    <div class="blogs" id="comboDulich">
       <div class="block-blogs">
-        <h2 class="text-center">Travel Tips</h2>
+        <h2 class="text-center">Combo Du Lịch</h2>
         <div class="container-e">
           <div class="slid-er">
             <div class="slides" id="slides">
@@ -784,12 +801,13 @@
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
                       <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog1">
                         <i class="fa fa-plus"></i>
                       </div>
+                      <h2>3 day in Ha Noi</h2>
+
                     </div>
                     
                   </div>
@@ -801,12 +819,13 @@
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
                       <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog2">
                         <i class="fa fa-plus"></i>
                       </div>
+                      <h2>3 day in Ha Noi</h2>
+
                     </div>
                     
                   </div>
@@ -818,12 +837,13 @@
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
                       <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog3">
                         <i class="fa fa-plus"></i>
                       </div>
+                      <h2>3 day in Ha Noi</h2>
+
                     </div>
                     
                   </div>
@@ -835,12 +855,13 @@
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
                       <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog4">
                         <i class="fa fa-plus"></i>
                       </div>
+                      <h2>3 day in Ha Noi</h2>
+
                     </div>
                     
                   </div>
@@ -851,12 +872,13 @@
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
                       <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog5">
                         <i class="fa fa-plus"></i>
                       </div>
+                      <h2>3 day in Ha Noi</h2>
+
                     </div>
                     
                   </div>
@@ -867,12 +889,13 @@
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
                       <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog6">
                         <i class="fa fa-plus"></i>
                       </div>
+                      <h2>3 day in Ha Noi</h2>
+
                     </div>
                     
                   </div>
@@ -883,12 +906,13 @@
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
                       <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog7">
                         <i class="fa fa-plus"></i>
                       </div>
+                      <h2>3 day in Ha Noi</h2>
+
                     </div>
                     
                   </div>
@@ -899,12 +923,13 @@
               <div class="slide">
                 <div class="slide-content">
                   <div class="block-content-blogs" target="_blank">
-                    <h2>3 day in Ha Noi</h2>
                     <img src="./image/ct1.jpg" loading="lazy" />
                     <div class="button-container">
                       <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog8">
                         <i class="fa fa-plus"></i>
                       </div>
+                      <h2>3 day in Ha Noi</h2>
+
                     </div>
                     
                   </div>
@@ -1136,20 +1161,295 @@
       </div>
     </div>
 
+    <!--group product 2 -->
+    <div class="product">
+      <div class="product-block">
+        <div class="grid-product">
+          <!-- product-7 -->
+          <div class="grid-clone">
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/Hotel-Colline-Da-Lat-HPT.jpg" alt="" />
+            <div class="grid-clone-title">
+              <h2>Hotel Colline</h2>
+              <h6>Khách sạn Đà Lạt</h6>
+            </div>
+            <!-- <div class="grid-clone-item">
+              <i class="fa fa-heart"></i>
+            </div> -->
+            <!-- Button content-product-7 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct7">
+              <i class="fa fa-plus"></i>
+            </div>
 
+            <!-- content-product-7  -->
+            <div class="modal fade" id="exampleProduct7" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      HELLO CÔ GỚI :)))
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Nhìn thế này đã được chưa cô nương =)))
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Cờ lau sờ
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Ô SỜ KÊ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product-8  -->
+          <div class="grid-clone">
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/Junglelodgepuluong-overview-hpt.jpg" alt="" />
+            <div class="grid-clone-title">
+              <h2>Pù Luông Jungle Lodge</h2>
+              <h6>Khách sạn Thanh Hóa</h6>
+            </div>
+            <!-- <div class="grid-clone-item">
+              <i class="fa fa-heart"></i>
+            </div> -->
+            <!-- Button product-8 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct8">
+              <i class="fa fa-plus"></i>
+            </div>
+
+            <!-- Content product-2-->
+            <div class="modal fade" id="exampleProduct8" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      HELLO CÔ GỚI :)))
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Nhìn thế này đã được chưa cô nương =)))
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Cờ lau sờ
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Ô SỜ KÊ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product-9  -->
+          <div class="grid-clone">
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/ville de mont mountain resort - hpt.png" alt="" />
+            <div class="grid-clone-title">
+              <h2>Ville De Mont Mountain </h2>
+              <h6>Resort Sapa</h6>
+            </div>
+            <!-- <div class="grid-clone-item">
+              <i class="fa fa-heart"></i>
+            </div>   -->
+            <!-- Button product-9 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct9">
+              <i class="fa fa-plus"></i>
+            </div>
+
+            <!-- Content product-9-->
+            <div class="modal fade" id="exampleProduct9" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      HELLO CÔ GỚI :)))
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Nhìn thế này đã được chưa cô nương =)))
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Cờ lau sờ
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Ô SỜ KÊ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product-10 -->
+          <div class="grid-clone">
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/my gallery boutique hotel - hpt.jpg" alt="" />
+            <div class="grid-clone-title">
+              <h2>My Gallery Boutique</h2>
+              <h6>Hotel & Spa Sapa</h6>
+            </div>
+            <!-- <div class="grid-clone-item">
+              <i class="fa fa-heart"></i>
+            </div> -->
+
+            <!-- Button product-10 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct10">
+              <i class="fa fa-plus"></i>
+            </div>
+            <!-- Content product-4 -->
+            <div class="modal fade" id="exampleProduct10" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      HELLO CÔ GỚI :)))
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Nhìn thế này đã được chưa cô nương =)))
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Cờ lau sờ
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Ô SỜ KÊ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product-11  -->
+          <div class="grid-clone">
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/esort chapa ecolodge -hpt.jpg" alt="" />
+            <div class="grid-clone-title">
+              <h2>Chapa Ecolodge</h2>
+              <h6>Resort Sapa</h6>
+            </div>
+            <!-- <div class="grid-clone-item">
+              <i class="fa fa-heart"></i>
+            </div> -->
+
+            <!-- Button product-11 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct11">
+              <i class="fa fa-plus"></i>
+            </div>
+
+            <!-- Content product-11 -->
+            <div class="modal fade" id="exampleProduct11" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      HELLO CÔsss GỚI :)))
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Nhìn thế này đã được chưa cô nương =)))
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Cờ lau sờ
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Ô SỜ KÊ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product-12  -->
+          <div class="grid-clone">
+            <div class="overlay-grid-clone"></div>
+            <img src="./image/dallat wonder -hpt.jpg" alt="" />
+            <div class="grid-clone-title">
+              <h2>Dalat Wonder</h2>
+              <h6>Resort Đà Lạt</h6>
+            </div>
+            <!-- <div class="grid-clone-item">
+              <i class="fa fa-heart"></i>
+            </div> --> 
+
+            <!-- Button product-12 -->
+            <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct12">
+              <i class="fa fa-plus"></i>
+            </div>
+
+            <!-- Content product-12 -->
+            <div class="modal fade" id="exampleProduct12" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      HELLO CÔ GỚI :)))
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Nhìn thế này đã được chưa cô nương =)))
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Cờ lau sờ
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Ô SỜ KÊ
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- testimonial -->
-    <div class="testimonial">
+    <!-- <div class="testimonial">
       <div class="testimonial-title">
-        <h6>Testimonial</h6>
-        <h2>What Our Clients Say’s</h2>
+        <h2>Phản hồiKhách Hàng</h2>
       </div>
 
       <div class="testimonial-content">
-        <!-- Swiper -->
         <div class="swiper-container testimonial-thumbs">
           <div class="swiper-wrapper">
-            <!-- testimonial-1  -->
             <div class="swiper-slide">
               <div class="testimonial-pic">
                 <img src="./image/samar24.jpg" alt="" />
@@ -1157,7 +1457,6 @@
               </div>
             </div>
 
-            <!-- testimonial-2  -->
             <div class="swiper-slide">
               <div class="testimonial-pic">
                 <img src="image/samar25.jpg" alt="" />
@@ -1165,7 +1464,6 @@
               </div>
             </div>
 
-            <!-- testimonial-3  -->
             <div class="swiper-slide">
               <div class="testimonial-pic">
                 <img src="image/samar26.jpg" alt="" />
@@ -1175,10 +1473,8 @@
           </div>
         </div>
 
-        <!-- content-testimonial  -->
         <div class="swiper-container testimonial-comment">
           <div class="swiper-wrapper">
-            <!-- content testimonial-1  -->
             <div class="swiper-slide">
               <div class="testimonial-text">
                 <strong class="testimonial-name">Cak Dikin </strong>
@@ -1196,7 +1492,6 @@
               </div>
             </div>
 
-            <!-- content testimonial-2  -->
             <div class="swiper-slide">
               <div class="testimonial-text">
                 <strong class="testimonial-name">Cak Dikin </strong>
@@ -1214,7 +1509,6 @@
               </div>
             </div>
 
-            <!-- content testimonial-3  -->
             <div class="swiper-slide">
               <div class="testimonial-text">
                 <strong class="testimonial-name">Cak Dikin </strong>
@@ -1236,7 +1530,8 @@
           <div  class="swiper-pagination"></div>
         </div>
       </div>
-    </div>
+    </div> -->
+
   </section>
 
   <!-- footer  -->
@@ -1249,48 +1544,42 @@
           <div class="contact-name">
             <img src="./image/z3717658380106_02b864d4cb210c7112e402a14815c8ff_clipdrop-background-removal.png" alt="" />
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+              Công ty Thương mại & Dịch vụ <br> Hoàng Phương Travel 
             </p>
             <div class="block-contact-socical">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-youtube"></i>
+              <a href="https://www.facebook.com/hoangphuongtravel"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/hoangphuongtravel_01/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@hoangphuongtravel1311?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.youtube.com/channel/UCTkjVGh8DYFGfgFysbWVrSg"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
 
           <!-- contact-navigation  -->
           <div class="contact-navigation">
-            <div class="navigation-title">
-              <h4>Navigation</h4>
-            </div>
             <div class="navigation-content">
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Service</a>
-              <a href="">Blogs</a>
-              <a href="">Contact</a>
+              <a href="#myHeader">Trang chủ</a>
+              <a href="#mySection">Điểm đến</a>
+              <a href="#product">Khách sạn</a>
+              <a href="#comboDulich">Combo Du Lịch</a>
             </div>
           </div>
 
           <!-- contact-info  -->
           <div class="contact-info">
-            <h4>Contact</h4>
+            <h4>LIÊN HỆ</h4>
             <ul>
-              <li>28a Lê Trọng Tấn - Hà Đông - Hà Nội</li>
-              <li>Hoangphuongtravel1311@gmail.com</li>
-              <li>0981068865</li>
+              <li>Địa chỉ: 28a Lê Trọng Tấn - Hà Đông - Hà Nội</li>
+              <li>Email: Hoangphuongtravel1311@gmail.com</li>
+              <li>Hotline: 0981068865</li>
             </ul>
           </div>
 
           <!-- contact-email  -->
-          <div class="contact-email">
+          <!-- <div class="contact-email">
             <form>
               <div class="form-row align-items-start">
                 <h4>Subscribe Newsletter</h4>
                 <div class="email-name">
-                  <!-- <label class="sr-only" for="inlineFormInput">Name</label> -->
                   <input class="input-email" type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Enter your email" />
                 </div>
                 <div class="email-submit">
@@ -1300,13 +1589,15 @@
                 </div>
               </div>
             </form>
-          </div>
+          </div> -->
+
+
         </div>
       </div>
 
       <!-- copyright  -->
       <div class="copyright">
-        <p>Copyright © 2022 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <a href="">Hoang Phuong Travel</a> </p>
+        <p>Copyright © 2022 All rights reserved | This template is made with by <a href="">Hoang Phuong Travel</a> </p>
         
       </div>
     </div>
@@ -1319,6 +1610,7 @@
   <script src="./js/testi.js"></script>
   <script src="./js/back-to-top.js"></script>
   <script src="./js/carousel-stop.js"></script>
+  <script src="./js/review-stop.js"></script>
 
   <!-- bootstraps  -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
