@@ -6,10 +6,9 @@
 
 
 body, html {
-    font-family: 'Jost', sans-serif;
     /* background: #F2F4F8 !important; */
     scroll-behavior: smooth !important;
-      font-family: "Poiret One";
+    font-family: 'Montserrat', sans-serif;    
    
 }
 
@@ -307,7 +306,6 @@ nav {
 }
 
 .carousel-caption h2 {
-  font-family: "Poiret One",cur;
 
 }
 
@@ -318,7 +316,6 @@ nav {
     margin-bottom: 30px;
     color: #fff;
     line-height: 1.1;
-    font-family: "Poiret One",cur;
 }
 
 .carousel-caption .read-content {
@@ -329,7 +326,6 @@ nav {
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
-  font-family: "Poiret One",cur;
 
  
 }
@@ -988,7 +984,7 @@ nav {
 }
 
 .grid-clone .grid-clone-title h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #fff;
 }
@@ -1082,6 +1078,7 @@ nav {
     position: relative;
     margin-top: 50px;
 
+    font-family: 'Montserrat', sans-serif !important; 
 }
 
 .swiper-button-next {
@@ -1131,7 +1128,6 @@ nav {
 }
 
 .blogs .text-center {
-    font-family: "Poiret One",cursive;
     /* font-weight: 100; */
     font-size: 2.5rem;
     font-weight: 600;
@@ -1164,7 +1160,6 @@ nav {
     left: 20px;
     padding: 5px; 
 
-    font-family: "Poiret One",cursive;
     color: #fff;
     text-align: center;
     font-size: 1.4rem;
