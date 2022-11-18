@@ -9,6 +9,8 @@
 
   <link rel="stylesheet icon" href="./image/logoHPT.jpg">
 
+
+
   <!-- font gg  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,20 +21,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  
 
   <!-- font items  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- swiper  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
 
   <!-- link css  -->
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body>
+<body id="myBody">
   <!-- back-to-top  -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">
     <div class="block-back-top">
@@ -49,7 +55,7 @@
   <!-- header  -->
   <header id="myHeader">
     <!-- nav  -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="navBar">
       <div class="logo">
         <img class="navbar-brand"
           src="./image/z3717658380106_02b864d4cb210c7112e402a14815c8ff_clipdrop-background-removal.png" alt="" />
@@ -58,7 +64,7 @@
       <div class="block-nav-content">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" href="#">Trang chủ</a>
             </li>
 
@@ -325,9 +331,10 @@
   </header>
 
   <!-- section  -->
-  <section id="mySection">
-    <!-- review   -->
-    <div class="block-review">
+  
+
+  <!-- review   -->
+  <div class="block-review">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <!-- group-review-1  -->
@@ -414,7 +421,12 @@
                       950.000 Đ/Khách
                     </h5>
                     <span><i class="fa fa-hand-point-down"></i> </span>
-                    <a  data-toggle="modal" onclick="stopReview()" data-target="#exampleModalReview2">CHI TIẾT</a>
+
+                    
+                    <a  data-toggle="modal" onclick="stopReview()" data-target="#exampleModalReview2">CHI TIẾT 
+                      
+                    </a>
+
                   </div>
                 </div>
               </div>
@@ -507,11 +519,390 @@
           <span class="sr-only">Next</span>
         </button>
       </div>
+  </div>
+
+
+  
+  <!-- blogs  -->
+  <div class="blogs" id="comboDulich">
+      <div class="block-blogs">
+        <!-- <h2 class="text-center">Combo Du Lịch</h2> -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <!-- blog-1 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="block-content-blogs" target="_blank">
+                  <img src="./image/ENB-hpt.jpg" loading="lazy" />
+                  <div class="button-container">
+                    <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog1">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <h2>Emeralda Ninh Bình Resort</h2>
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- blog-2 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="block-content-blogs" target="_blank">
+                  <img src="./image/my gallery boutique hotel - hpt.jpg" loading="lazy" />
+                  <div class="button-container">
+                    <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog2">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <h2>My Gallery Boutique Hotel</h2>
+
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- blog-3 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="block-content-blogs" target="_blank">
+                  <img src="./image/esort chapa ecolodge -hpt.jpg" loading="lazy" />
+                  <div class="button-container">
+                    <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog3">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <h2>Resort Chanpa Ecolodge</h2>
+
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- blog-4 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="block-content-blogs" target="_blank">
+                  <img src="./image/le hoi hoa tam giac mach - hpt.jpg" loading="lazy" />
+                  <div class="button-container">
+                    <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog4">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <h2>Lễ Hội Hoa Tam Giác Mạch</h2>
+
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- blog-5 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="block-content-blogs" target="_blank">
+                  <img src="./image/khu-nghi-duong-da-lat-wonder-hpt.jpg" loading="lazy" />
+                  <div class="button-container">
+                    <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog5">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <h2>Đà Lạt Wonder Resort</h2>
+
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- blog-6 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="block-content-blogs" target="_blank">
+                  <img src="./image/cherry house pq - hpt.jpg" loading="lazy" />
+                  <div class="button-container">
+                    <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog6">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <h2>Phú Quốc</h2>
+
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- blog-7 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="block-content-blogs" target="_blank">
+                  <img src="./image/eo-gio-quy-nhon -hpt.jpg" loading="lazy" />
+                  <div class="button-container">
+                    <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog7">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <h2>Quy Nhơn</h2>
+
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- blog-8 -->
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="block-content-blogs" target="_blank">
+                  <img src="./image/viettrekking sapa - hpt.jpg" loading="lazy" />
+                  <div class="button-container">
+                    <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog8">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <h2>Viettreking SAPA</h2>
+
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+          
+        </div>
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        
+          
+      </div>
+
+
+
+      <!-- Group-content-blogs  -->
+
+      <!-- content blogs-1 -->
+      <div class="modal fade" id="exampleBlog1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-2  -->
+      <div class="modal fade" id="exampleBlog2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-3  -->
+      <div class="modal fade" id="exampleBlog3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-4  -->
+      <div class="modal fade" id="exampleBlog4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-5  -->
+      <div class="modal fade" id="exampleBlog5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-6 -->
+      <div class="modal fade" id="exampleBlog6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-7  -->
+      <div class="modal fade" id="exampleBlog7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content-blog-8  -->
+      <div class="modal fade" id="exampleBlog8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              HELLO CÔ GỚI :)))
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+            </div>
+            <div class="modal-body">
+                            Nhìn thế này đã được chưa cô nương =)))
+            </div>
+            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Cờ lau sờ
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Ô SỜ KÊ
+                            </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!--group product 1 -->
-    <div class="product" id="product">
-      <div class="product-block">
+  <!--group product 1 -->
+  <div class="product " id="product">
+      <div class="overlay-bg-product"></div>
+      <div class="product-block container">
         <div class="grid-product">
           <!-- product-1 -->
           <div class="grid-clone">
@@ -787,391 +1178,18 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- blogs  -->
-    <div class="blogs" id="comboDulich">
-      <div class="block-blogs">
-        <h2 class="text-center">Combo Du Lịch</h2>
-        <div class="container-e">
-          <div class="slid-er">
-            <div class="slides" id="slides">
+      <button onclick="addProduct()" class="add-product"><span>Xem thêm</span></button>
 
-              <!-- blog-1 -->
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog1">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                      <h2>3 day in Ha Noi</h2>
-
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-
-              <!-- blog-2 -->
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog2">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                      <h2>3 day in Ha Noi</h2>
-
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-
-              <!-- blog-3 -->
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog3">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                      <h2>3 day in Ha Noi</h2>
-
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-
-              <!-- blog-4 -->
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog4">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                      <h2>3 day in Ha Noi</h2>
-
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <!-- blog-5 -->
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog5">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                      <h2>3 day in Ha Noi</h2>
-
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <!-- blog-6 -->
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog6">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                      <h2>3 day in Ha Noi</h2>
-
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <!-- blog-7 -->
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog7">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                      <h2>3 day in Ha Noi</h2>
-
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <!-- blog-8 -->
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="block-content-blogs" target="_blank">
-                    <img src="./image/ct1.jpg" loading="lazy" />
-                    <div class="button-container">
-                      <div type="button" class="btn show-product-blogs" data-toggle="modal" data-target="#exampleBlog8">
-                        <i class="fa fa-plus"></i>
-                      </div>
-                      <h2>3 day in Ha Noi</h2>
-
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Group-content-blogs  -->
-
-      <!-- content blogs-1 -->
-      <div class="modal fade" id="exampleBlog1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- content-blog-2  -->
-      <div class="modal fade" id="exampleBlog2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- content-blog-3  -->
-      <div class="modal fade" id="exampleBlog3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- content-blog-4  -->
-      <div class="modal fade" id="exampleBlog4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- content-blog-5  -->
-      <div class="modal fade" id="exampleBlog5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- content-blog-6 -->
-      <div class="modal fade" id="exampleBlog6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- content-blog-7  -->
-      <div class="modal fade" id="exampleBlog7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- content-blog-8  -->
-      <div class="modal fade" id="exampleBlog8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              HELLO CÔ GỚI :)))
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            Nhìn thế này đã được chưa cô nương =)))
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                              Cờ lau sờ
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Ô SỜ KÊ
-                            </button>
-                          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--group product 2 -->
-    <div class="product">
-      <div class="product-block">
+      <div class="product-block product-block-2 container">
         <div class="grid-product">
           <!-- product-7 -->
           <div class="grid-clone">
             <div class="overlay-grid-clone"></div>
-            <img src="./image/Hotel-Colline-Da-Lat-HPT.jpg" alt="" />
+            <img src="./image/PAO'SAPA - HPT.png" alt="" />
             <div class="grid-clone-title">
-              <h2>Hotel Colline</h2>
-              <h6>Khách sạn Đà Lạt</h6>
+              <h2>Pao's Sapa</h2>
+              <h6>Khách sạn Sapa</h6> 
             </div>
             <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
@@ -1213,10 +1231,10 @@
           <!-- product-8  -->
           <div class="grid-clone">
             <div class="overlay-grid-clone"></div>
-            <img src="./image/Junglelodgepuluong-overview-hpt.jpg" alt="" />
+            <img src="./image/ENB-hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>Pù Luông Jungle Lodge</h2>
-              <h6>Khách sạn Thanh Hóa</h6>
+              <h2>Emeralda Ninh Bình</h2>
+              <h6>Resort Ninh Bình</h6>
             </div>
             <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
@@ -1258,10 +1276,10 @@
           <!-- product-9  -->
           <div class="grid-clone">
             <div class="overlay-grid-clone"></div>
-            <img src="./image/ville de mont mountain resort - hpt.png" alt="" />
+            <img src="./image/lavallee homestay moc chau - hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>Ville De Mont Mountain </h2>
-              <h6>Resort Sapa</h6>
+              <h2>Lavallee</h2>
+              <h6>Homestay Mộc Châu</h6>
             </div>
             <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
@@ -1303,10 +1321,10 @@
           <!-- product-10 -->
           <div class="grid-clone">
             <div class="overlay-grid-clone"></div>
-            <img src="./image/my gallery boutique hotel - hpt.jpg" alt="" />
+            <img src="./image/puluong-retreat-hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>My Gallery Boutique</h2>
-              <h6>Hotel & Spa Sapa</h6>
+              <h2>Pù Luông Retreat</h2>
+              <h6>Khách sạn Pù Luông</h6>
             </div>
             <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
@@ -1345,17 +1363,17 @@
             </div>
           </div>
 
-          <!-- product-11  -->
+           <!-- product- 11  -->
           <div class="grid-clone">
             <div class="overlay-grid-clone"></div>
-            <img src="./image/esort chapa ecolodge -hpt.jpg" alt="" />
+            <img src="./image/inhla home pu luong -hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>Chapa Ecolodge</h2>
-              <h6>Resort Sapa</h6>
+              <h2>Inhla Home</h2>
+              <h6>Homestay Pù Luông</h6>
             </div>
             <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
-            </div> -->
+            </div> 
 
             <!-- Button product-11 -->
             <div type="button" class="btn show-product" data-toggle="modal" data-target="#exampleProduct11">
@@ -1394,10 +1412,10 @@
           <!-- product-12  -->
           <div class="grid-clone">
             <div class="overlay-grid-clone"></div>
-            <img src="./image/dallat wonder -hpt.jpg" alt="" />
+            <img src="./image/nha happy house socson -hpt.jpg" alt="" />
             <div class="grid-clone-title">
-              <h2>Dalat Wonder</h2>
-              <h6>Resort Đà Lạt</h6>
+              <h2>Nhà Happy House</h2>
+              <h6>Homestay Sóc Sơn</h6>
             </div>
             <!-- <div class="grid-clone-item">
               <i class="fa fa-heart"></i>
@@ -1439,100 +1457,19 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- testimonial -->
-    <!-- <div class="testimonial">
-      <div class="testimonial-title">
-        <h2>Phản hồiKhách Hàng</h2>
-      </div>
+      <button onclick="removeProduct()" class="remove-product"><span>Thu gọn</span></button>
 
-      <div class="testimonial-content">
-        <div class="swiper-container testimonial-thumbs">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-pic">
-                <img src="./image/samar24.jpg" alt="" />
-                <div class="shape-bx"></div>
-              </div>
-            </div>
+  </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-pic">
-                <img src="image/samar25.jpg" alt="" />
-                <div class="shape-bx"></div>
-              </div>
-            </div>
+  <!--group product 2 -->
+  <!-- <div class="product">
+      
+  </div> -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-pic">
-                <img src="image/samar26.jpg" alt="" />
-                <div class="shape-bx"></div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="swiper-container testimonial-comment">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-text">
-                <strong class="testimonial-name">Cak Dikin </strong>
-                <span class="testimonial-position text-primary m-b20">CEO &amp; Founder
-                </span>
-                <p>
-                  Duis feugiat est tincidunt ligula maximus convallis. Aenean
-                  ultricies, mi non vestibulum auctor, erat tortor porttitor
-                  ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis
-                  erat.
-                </p>
-                <div class="testimonial-comment-item">
-                  <i class="fa fa-quote-left"></i>
-                </div>
-              </div>
-            </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-text">
-                <strong class="testimonial-name">Cak Dikin </strong>
-                <span class="testimonial-position text-primary m-b20">CEO &amp; Founder
-                </span>
-                <p>
-                  Duis feugiat est tincidunt ligula maximus convallis. Aenean
-                  ultricies, mi non vestibulum auctor, erat tortor porttitor
-                  ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis
-                  erat.
-                </p>
-                <div class="testimonial-comment-item">
-                  <i class="fa fa-quote-left"></i>
-                </div>
-              </div>
-            </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-text">
-                <strong class="testimonial-name">Cak Dikin </strong>
-                <span class="testimonial-position text-primary m-b20">CEO &amp; Founder
-                </span>
-                <p>
-                  Duis feugiat est tincidunt ligula maximus convallis. Aenean
-                  ultricies, mi non vestibulum auctor, erat tortor porttitor
-                  ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis
-                  erat.
-                </p>
-                <div class="testimonial-comment-item">
-                  <i class="fa fa-quote-left"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div  class="swiper-pagination"></div>
-        </div>
-      </div>
-    </div> -->
-
-  </section>
 
   <!-- footer  -->
   <footer>
@@ -1604,21 +1541,59 @@
   </footer>
 
 
+
   <!-- js  -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/blogs.js"></script>
-  <script src="./js/testi.js"></script>
   <script src="./js/back-to-top.js"></script>
   <script src="./js/carousel-stop.js"></script>
   <script src="./js/review-stop.js"></script>
+  <!-- <script src="./js/blogs.js"></script> -->
+  <script src="./js/addProduct.js"></script>
+  <script src="./js/navScroll.js"></script>
+
+
+
+
+ 
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      // centeredSlides: true,
+      autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
+  </script>
 
   <!-- bootstraps  -->
+  
+
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
+
+
+
+   
+
+
+ 
+
+  
 </body>
 
 </html>
