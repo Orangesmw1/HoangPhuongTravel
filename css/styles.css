@@ -1436,7 +1436,7 @@ nav {
     /* review  */
 
     .review {
-      height: 300px;
+      height: 380px;
 
       display: flex;
       justify-content: center;
@@ -1590,8 +1590,9 @@ nav {
     }
     
     .block-content-blogs h2 {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       left: 5px;
+      padding: 0;
       }
 
     .blogs .modal-dialog {
