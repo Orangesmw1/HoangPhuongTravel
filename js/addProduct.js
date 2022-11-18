@@ -3,6 +3,7 @@ var addProduct2 = document.querySelector(".add-product");
 var gridProduct = document.querySelector(".grid-product");
 var removeProduct2 = document.querySelector(".remove-product");
 
+
 function addProduct() {
     if(product2.style = "display: none") {
         product2.style = `
