@@ -1646,6 +1646,13 @@ nav {
 
   }
 
+  /* for mobile 390px  */
+  @media (max-width: 391px) {
+    .slide-content {
+      width: 120px;
+      height: 220px;
+    }
+  }
 
 
   /* ---------- footer ----------  */
