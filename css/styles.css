@@ -1590,7 +1590,7 @@ nav {
     }
 
     .slide-content {
-      width: 150px;
+      width: 129px;
       height: 220px;
     }
     
@@ -1644,14 +1644,6 @@ nav {
     
     }
 
-  }
-
-  /* for mobile 400px  */
-  @media (max-width: 400px) {
-    .slide-content {
-      width: 100px;
-      height: 220px;
-    }
   }
 
 
