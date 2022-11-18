@@ -1595,8 +1595,9 @@ nav {
     }
     
     .block-content-blogs h2 {
-      font-size: 1.1rem;
-    }
+      font-size: 0.8rem;
+      left: 5px;
+      }
 
     .blogs .modal-dialog {
       max-width: 80vw !important;
