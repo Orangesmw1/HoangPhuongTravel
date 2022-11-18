@@ -1647,7 +1647,7 @@ nav {
   }
 
   /* for mobile 390px  */
-  @media (max-width: 391px) {
+  @media (max-width: 400px) {
     .slide-content {
       width: 120px;
       height: 220px;
